@@ -1,0 +1,144 @@
+ /* Menu */
+ body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .pill-nav a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+  }
+  
+  .pill-nav a:hover {
+    background-color: #F33A6A;
+    color: white;
+  }
+  
+  .pill-nav a.active {
+    background-color:white;
+    color: black;
+  }
+/* Slutet av menu */
+
+/* Önskelistan */
+#önskelisth1 {
+  color: white;
+  border-style: solid;
+  border-color: #FF69B4;
+  border-width: medium;
+  text-align: center;
+  letter-spacing: 5px;
+  font-family: "Garamond";
+  font-size: 50px;
+}
+
+#önskelisth5 {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+
+ #önskelistp1{
+  color: red;
+  text-align: center;
+  font-size: 13px;
+}
+
+body { 
+  background-color: pink;
+}
+
+.pink {
+  background-color: #F33A6A ;
+  color: pink;
+}
+
+.product-container {
+display: flex;
+flex-wrap: wrap; /* Produkterna kan flyta till nästa rad när de inte får plats */
+justify-content: center; /* Centrera produkterna horisontellt */
+align-items: flex-start; /* Centrera produkterna vertikalt */
+height: 1000px; /* gör att alla bilder ställde på samma rad*/
+}
+
+.product-container1 {
+display: flex;
+flex-wrap: wrap; /* Produkterna kan flyta till nästa rad när de inte får plats */
+justify-content: flex-start; /* Centrera produkterna horisontellt */
+align-items: center; /* Centrera produkterna vertikalt */
+}
+
+.wish-item {
+  margin: 0 20px 30px; /* Justera avståndet mellan produkterna */
+}
+
+
+.item {
+width: 180px; /* Bredden på varje produkt */
+display: flex;
+flex-direction: column;
+}
+/* Slutet av önskelistan */
+
+/* Minnen */
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 8px;
+}
+
+div.scroll-container img {
+  padding: 8px;
+}
+
+
+/* Slutet av minnen */
+
+/* Start sidan */
+.graffiti {
+  display: flex;
+  align-items: center; /* Centrerar innehållet vertikalt */
+  justify-content: center; /* Centrerar innehållet horisontellt */
+  height: 50vh; /* Hela höjden av vyfönstret */
+  font-family: 'Rock Salt', cursive;
+}
+
+.sweet {
+  font-size: 150px; /* Större storlek för hela ordet "Sweet18" */
+  color: #FF69B4; /* Färg för "Sweet18" */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Textskugga för "Sweet18" */
+}
+
+.eighteen {
+  color: white;
+  text-shadow: none;
+}
+
+.date {
+  font-size: 16px; /* Mindre storlek för datumet */
+  color: black; 
+  margin-top: 10px; /* Lite avstånd från graffiti-texten */
+  text-align: center;
+}
+
+/* Mediaförfrågan för mindre skärmar */
+@media (max-width: 600px) {
+  .sweet, .eighteen {
+    font-size: 60px; /* Mindre storlek på mindre skärmar */
+  }
+
+  .scroll-container {
+    transform: scale(0.8); /* Minska skalan för innehållet på mindre skärmar */
+  }
+
+  .wish-list {
+    grid-template-columns: repeat(2, 1fr); /* Visa endast 2 kolumner på mindre skärmar */
+  }
+    
+  }
+/* Slutet av start sidan */
